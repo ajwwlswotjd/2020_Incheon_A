@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Malgun Gothic","Arial";
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.logo-graphic {
+    width: 50px;
+    height: 50px;
+    background: conic-gradient(#20c997 120deg, #22b8cf 120deg 240deg, #479ee5 240deg 360deg);
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+#visual {
+     width: 100%;
+     height: 500px;
+     position: relative;
+     overflow: hidden;
+}
+
+.slider-pannel {
+    width: 300%;
+    height: 100%;
+    background-color: #ddd;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+    transition: left .4s;
+}
+
+.slider-pannel > img {
+    width: calc(100% / 3);
+    height: 100%;
+    object-fit: cover;
+}
+
+.controller-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 10;
+}
+
+#before {left: 30px;}
+#next {right: 30px;}
+
+.controller-btn:hover {
+    background-color: #ddd;
+}
+
+.visual-btn-box {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visual-btn-box > button {
+    width: 30px;
+    height: 30px;
+}
+
+.visual-btn-box > button.active {
+    background-color: #fff;
+}
+
+#introduce {
+    
+}
